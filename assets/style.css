@@ -29,6 +29,10 @@ h3{
     color: #fcf5eb;
 }
 
+main {
+    padding: 2vh;
+}
+
 nav {
     display: flex;
     align-content: center;
@@ -291,7 +295,6 @@ footer {
     padding: 3vh;
     text-align: justify;
     width: fit-content;
-    justify-self: center;
     position: relative;
     z-index: 999;
 }
@@ -352,7 +355,7 @@ footer {
         position: absolute;
         flex-direction: column;
         z-index: 9;
-        top: -2.2vh;
+        top: -2.3vh;
         right: 0;
         left: 0;
         bottom: 0;
@@ -372,11 +375,19 @@ footer {
 
     .jumbotron {
         height: 60vh;
-        font-size: 2em;
+        font-size: 1.7em;
     }
 
     .dropdown-content {
         top: 62vh;
+    }
+
+    main .card-new h3 {
+        font-size: 1em;
+    }
+
+    .card {
+        padding: 5vh;
     }
 
 }
