@@ -12,7 +12,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: url('/assets/img/bg.jpg');
+    background: url('https://img001.prntscr.com/file/img001/JPEejYxvT0GFqSJ6lb8HfA.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -170,7 +170,7 @@ nav a:hover, nav span:hover {
     display: flex;
     justify-content: center;
     align-items: flex-end ;
-    background: url('/assets/img/jumbotron.jpg');
+    background: url('https://img001.prntscr.com/file/img001/QlQAwfp6Q8iiJ0oo20m3jA.jpg');
     background-position: center;
     background-size: cover;
     height: 90vh;
@@ -267,10 +267,9 @@ footer {
 }
 
 .display {
-    position: absolute;
-    top: 100vh;
-    left: 70vh;
-    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-content: center;
 }
 
 .img-width{
@@ -293,6 +292,8 @@ footer {
     text-align: justify;
     width: fit-content;
     justify-self: center;
+    position: relative;
+    z-index: 999;
 }
 
 /* Scrollbar */

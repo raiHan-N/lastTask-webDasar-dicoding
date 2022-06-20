@@ -14,39 +14,15 @@ const nav = document.querySelector('nav ul');
    dropdownContent.classList.toggle('screen');
  });
 
-
- let show = false;
-
+// CardDisplay
  const menuName = document.querySelectorAll('main #content p a');
  menuName.forEach(function(m,i){
-  if(!show){
     m.addEventListener('click', function(){
-      const card = document.createElement('div');
-      document.body.appendChild(card);
-      card.setAttribute('class', 'card-new');
+      const card = document.querySelector(`main #pop-up${i}`);
       card.classList.toggle('display');
-
-      const img = document.createElement("img");
-      img.src = `assets/img/menu/${i}.jpg`;
-      img.classList.add("img-width");
-      card.appendChild(img);
-      document.body.appendChild(card);
-      const textEl = document.createElement('h3');
-      textEl.innerText = m.innerText;
-      card.appendChild(textEl);
-      show = 'true';
+      alert('Tekan nama menu sekali lagi untuk menghilangkan gambar');
     });
-  }
  });
-
-    let btnBody = document.querySelectorAll('body .card-new');
-    if(show){
-      document.body.addEventListener('click', function(){
-      removeChild(btnBody);
-    })
-    }
-     
-
 });
 
 
